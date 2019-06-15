@@ -1,59 +1,50 @@
 /* ==UserStyle==
 @name           ArsTechnica - Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.0.0
+@version        1.1.0
 @description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
 @author         Hunter Morrell
 ==/UserStyle== */
 
 @-moz-document domain("arstechnica.com") {
 
+    /* Overall site */
     html body div.site-wrapper
     {
         max-width: 100%!important;
         padding-left: 5%!important;
         padding-right: 5%!important;
+        padding-top: 0!important;
     }
 
-    /* Removing right panel */
-    html body div.site-wrapper main article div div.xrail
-    {
-        display: none!important;
-    }
-
-    html body div.site-wrapper main article div.column-wrapper div.left-column
-    {
-        width: 85%!important;
-        margin-left: 5%!important;
-        margin-right: 5%!important;
-    }
-
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper main#main.content-wrapper article.article-single.standalone.intro-default div.column-wrapper div.left-column,
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper main#main.content-wrapper article.article-single.standalone.intro-default div.column-wrapper div.left-column header.article-header,
-    html body div.site-wrapper main article div.column-wrapper div.left-column section div div.gallery.shortcode-gallery.gallery-wide
-    {
-        margin-left: 0%!important;
-        width: 100%!important;
-    }
-
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper main#main.content-wrapper article.article-single.standalone.intro-default div.column-wrapper div.left-column section.article-guts div.article-content.post-page div.gallery.shortcode-gallery.gallery-wide div.lSSlideOuter div.lSSlideWrapper.usingCss ul.lightSlider.lSSlide
+    /* Primary article contents */
+    .article-single .column-wrapper .left-column
     {
         width: 100%!important;
     }
 
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper header.site-header.scrolled-up,
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper a.screen-reader-text.skip-link,
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper footer.site-footer,
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper main#main.content-wrapper article.article-single.standalone.intro-default div#article-footer-wrap,
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper main#main.content-wrapper article.article-single.standalone.intro-default div.column-wrapper div.left-column section.article-guts div.article-content.post-page div.pullbox.sidebar.story-sidebar.right,
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper main#main.content-wrapper article.article-single.standalone.intro-default div.column-wrapper div.left-column section.article-guts div.article-content.post-page aside#social-left
+    /* Aligning and resizing individual items in order to fit better and not go off screen */
+    .article-single .article-header,
+    .left-column,
+    .article-single .gallery,
+    .article-single figure.full-width,
+    .article-single figure.intro-image,
+    .article-single figure.video
+    {
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+
+    /* Removing any unwanted elements */
+    div.xrail,
+    .site-header,
+    .comment-count,
+    .story-sidebar,
+    .article-single #article-footer-wrap,
+    .site-footer
     {
         display: none!important;
     }
 
-    html body.post-template-default.single.single-post.postid-1507765.single-format-standard.archive-view.dark.is_subscriber.is_plus_plus.blog-us.sticky_support div.site-wrapper
-    {
-        padding-top: 0%!important;
-    }
 
 }
