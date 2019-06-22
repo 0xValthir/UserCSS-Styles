@@ -1,0 +1,74 @@
+/* ==UserStyle==
+@name           Eurogamer - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+==/UserStyle== */
+
+@-moz-document domain("eurogamer.net") {
+
+    #leaderboard.advert.leaderboard,
+    .desktop-header,
+    .sidebar,
+    .main article.article header.page-header div.social,
+    .main article.article header.page-header div.tags,
+    .end,
+    html body#theTop div#browserMaster.hd footer.footer.hd,
+    .below.hd div.homepage-billboard-container.collapsible,
+    .below.hd p.section-title,
+    .below.hd div.stack,
+    .main article.article footer,
+    .main div.container-690 div.game-grid-block,
+    .below.hd div#comments.hd div.threaded-comments.hd div.main-login-prompt,
+    .below.hd div#comments.hd div.threaded-comments.hd div.filters
+    {
+        display: none!important;
+    }
+
+    #page-wrapper div.document-wrapper,
+    .main article.article,
+    .main article.article main
+    {
+        width: 100%!important;
+        max-width: 100%!important;
+    }
+
+    .main
+    {
+        padding-right: 0!important;
+    }
+
+    .main article.article main aside.author
+    {
+        margin-left: 0!important;
+    }
+
+    p,
+    .main article.article main section figure.video,
+    .main div.container-690,
+    .below.hd div#comments.hd,
+    .below.hd div#comments.hd div.threaded-comments.hd div.comments-list div div.details div.body table
+    {
+        max-width: 90%!important;
+    }
+
+    .document,
+    .below
+    {
+        background-color: #353535!important;
+        color: #bdbdbd!important;
+    }
+
+    .title,
+    td
+    {
+        color: #bdbdbd!important;
+    }
+
+    a
+    {
+        color: #dd3232!important;
+    }
+
+}

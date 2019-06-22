@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           RockPaperShotgun - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+==/UserStyle== */
+
+@-moz-document domain("rockpapershotgun.com") {
+	html body.ads-enabled div.breaking,
+	html body.ads-enabled header.header-desktop,
+	html body.ads-enabled footer.footer,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div.billboard-container.collapsible,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div#recommendations,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div.spotlight-bar,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below p.section-title,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div.video-hub.in-article.loaded.desktop,
+	html body.ads-enabled div#page-wrapper div#page.page main div.above div.container-690
+	{
+	    display: none!important;
+	}
+
+	html body.ads-enabled div#page-wrapper div#page.page main
+	{
+	    padding: 1%!important;
+	}
+
+	html body.ads-enabled div#page-wrapper div#page.page main div.above
+	{
+	    padding-right: 0!important;
+	}
+
+	html body.ads-enabled div#page-wrapper div#page.page main div.above article header,
+	html body.ads-enabled div#page-wrapper div#page.page main div.above article main,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div#comments div.comments-container,
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div#comments div.comments-container div.comments-list div div.details div.body,
+	.page
+	{
+	    max-width: 95%!important;
+	    width: 95%!important;
+	}
+
+	html body.ads-enabled div#page-wrapper div#page.page main div.below div#comments
+	{
+	    padding-left: 2.5%!important;
+	}
+
+
+	/* Dark background color */
+	html body.ads-enabled,
+	html body.ads-enabled div#page-wrapper div#page.page main
+	{
+	    background-color: #202020 !important;
+	}
+
+	/* Link colors */
+	a,
+	.title a,
+	.article.feature main a:not(.button)
+	{
+	    color: #399c5d!important;
+	}
+
+	/* Header colors */
+	h1,
+	h2
+	{
+	    color: #E7387D!important;
+	}
+
+	/* Regular text colors */
+	p
+	{
+	    color: #aa9f9f!important;
+	}
+}

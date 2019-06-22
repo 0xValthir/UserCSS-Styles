@@ -1,0 +1,50 @@
+/* ==UserStyle==
+@name           Vice - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+==/UserStyle== */
+
+@-moz-document domain("vice.com") {
+	.navbar-container,
+	.share-icons,
+	.gutter__content,
+	.up-next,
+	.gutter,
+	.newsletter
+	{
+	    display: none!important;
+	}
+
+	.vice .vice-page__width,
+	.short-form-article,
+	.short-form-article__body,
+	.short-form-article__header-dek-wrapper
+	{
+	    max-width: 100%!important;
+	    padding-top: 0%!important;
+	}
+
+	main
+	{
+	    padding-top: 0!important;
+	    background-color: rgb(49, 49, 49);
+	    color: rgb(187, 187, 187);
+	}
+
+	a
+	{
+	    color: rgb(242, 33, 33)!important;
+	}
+
+	.article__dek
+	{
+	    color: rgb(187, 187, 187);
+	}
+
+	.short-form-article__header
+	{
+	    border-top: none!important;
+	}
+}
