@@ -1,6 +1,14 @@
 /* ==UserStyle==
 @name           Eurogamer - Dark Mode + Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.1.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+==/UserStyle== */
+
+/* ==UserStyle==
+@name           Eurogamer - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
 @version        1.0.0
 @description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
 @author         Hunter Morrell
@@ -21,14 +29,16 @@
     .main article.article footer,
     .main div.container-690 div.game-grid-block,
     .below.hd div#comments.hd div.threaded-comments.hd div.main-login-prompt,
-    .below.hd div#comments.hd div.threaded-comments.hd div.filters
+    .below.hd div#comments.hd div.threaded-comments.hd div.filters,
+    .social
     {
         display: none!important;
     }
 
-    #page-wrapper div.document-wrapper,
+    .document-wrapper,
     .main article.article,
-    .main article.article main
+    .main article.article main,
+    .body
     {
         width: 100%!important;
         max-width: 100%!important;
@@ -39,16 +49,18 @@
         padding-right: 0!important;
     }
 
-    .main article.article main aside.author
+    .main article.article main aside.author,
+    .article .body figure.left
     {
-        margin-left: 0!important;
+        margin-left: 5%!important;
     }
 
     p,
     .main article.article main section figure.video,
     .main div.container-690,
     .below.hd div#comments.hd,
-    .below.hd div#comments.hd div.threaded-comments.hd div.comments-list div div.details div.body table
+    .below.hd div#comments.hd div.threaded-comments.hd div.comments-list div div.details div.body table,
+    .article .body h2
     {
         max-width: 90%!important;
     }
@@ -61,11 +73,7 @@
     }
 
     .title,
-    td
-    {
-        color: #bdbdbd!important;
-    }
-
+    .article .body h2,
     a
     {
         color: #dd3232!important;
