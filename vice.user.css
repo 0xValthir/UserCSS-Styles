@@ -6,18 +6,39 @@
 @author         Hunter Morrell
 ==/UserStyle== */
 
+/* ==UserStyle==
+@name           Vice - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+==/UserStyle== */
+
+/* ==UserStyle==
+@name           Vice - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+==/UserStyle== */
+
 @-moz-document domain("vice.com") {
 	.navbar-container,
 	.share-icons,
 	.gutter__content,
 	.up-next,
 	.gutter,
-	.newsletter
+	.newsletter,
+    .short-form-v2 .short-form-v2__bounding-box .short-form-article__right-bar
 	{
 	    display: none!important;
 	}
 
-	.vice .vice-page__width
+	.vice .vice-page__width,
+    .vice .site-width,
+    .short-form-v2 .short-form-v2__heading,
+    .short-form-v2 .short-form-v2__heading .article-heading-v2__header-dek-wrapper,
+    .short-form-v2 .short-form-v2__bounding-box .short-form-v2__body
     {
 	    max-width: 100%!important;
 	    padding-top: 0%!important;
@@ -29,7 +50,11 @@
     .long-form-article__content__body .article__body,
     .long-form-article__content__body > *,
     .long-form-article__content__body .article__body > *,
-    .long-form-article__content__header
+    .long-form-article__content__header,
+    .long-form-v2 .long-form-v2__content .long-form-v2__header-wrapper .long-form-v2__content-header-inner .article-heading-v2__header-dek-wrapper,
+    .long-form-v2--center,
+    .long-form-v2 .long-form-v2__content .long-form-v2__content-body .article__body > *,
+    .short-form-v2
 	{
 	    max-width: 90%!important;
 	    padding-top: 0%!important;
@@ -40,11 +65,13 @@
         margin-left: 0%!important;
     }
     
-	main
+	main,
+    .long-form-v2 .long-form-v2__content .long-form-v2__header-wrapper,
+    body
 	{
 	    padding-top: 0!important;
-	    background-color: rgb(49, 49, 49);
-	    color: rgb(187, 187, 187);
+	    background-color: rgb(49, 49, 49)!important;
+	    color: rgb(187, 187, 187)!important;
 	}
 
 	a
@@ -61,4 +88,10 @@
 	{
 	    border-top: none!important;
 	}
+    
+    .long-form-v2 .long-form-v2__content .long-form-v2__header-wrapper
+    {
+        margin-left: 0!important;
+        padding-left: 2%!important;
+    }
 }

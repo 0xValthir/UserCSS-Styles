@@ -79,4 +79,9 @@
         color: #dd3232!important;
     }
 
+    .article .body figure.right,
+    .article .body figure.small
+    {
+        margin-right: 2%!important;
+    }
 }

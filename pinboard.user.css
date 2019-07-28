@@ -1,0 +1,242 @@
+/* ==UserStyle==
+@name           Pinboard - Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@author         Hunter Morrell
+Sources: https://userstyles.org/styles/118641/nicer-pinboard
+==/UserStyle== */
+
+/* ==UserStyle==
+@name           pinboard.in - 7/4/2019, 8:26:41 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600");
+@-moz-document domain("pinboard.in") {
+    
+
+    
+    body,
+    #banner
+    {
+        background-color: #333!important;
+    }
+    
+    #content,
+    #banner
+    {
+        width: 95%!important;
+    }
+    
+    #main_column
+    {
+        width: 75%!important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .user_navbar
+    {
+        width: 75%!important;
+    }
+    
+    body
+  {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 1.7em;
+  }
+
+  a.url_display
+  {
+    transition: color 150ms linear;
+    display: inline-block;
+    margin-bottom: 0.8em;
+  }
+
+  a.bookmark_title,
+  a.url_display:hover,
+  #banner a,
+  #main_column div.user_navbar div.small_username b a
+  {
+    color: rgb(207, 64, 64)!important;
+  }
+
+  .url_link, .private a.url_link
+  {
+    display: inline-block;
+    margin-top: 0.6em;
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  .star
+  {
+    margin-left: -28px;
+    font-family: Arial Unicode, Arial, sans-serif;
+    line-height: 1.25;
+  }
+
+  .bookmark
+  {
+    margin: 0;
+    padding: 1.2em 0.6em;
+    border-color: #eee;
+    border-style: solid;
+    border-bottom-width: 1px;
+  }
+
+  #bookmarks div:first-child .bookmark
+  {
+    border-top-width: 1px;
+  }
+
+  a.tag
+  {
+    color: rgb(170, 85, 17);
+    border-radius: 0.2em;
+    transition: color 0.2s cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  .bookmark
+  {
+    line-height: 1.4;
+  }
+
+  .bookmark a.tag
+  {
+    padding: 0.1em 0.3em;
+    margin: 0 0.2em 0 -0.3em;
+    line-height: 1.1 !important;
+  }
+
+  a.tag:hover
+  {
+    color: rgb(123, 61, 11);
+    background-color: rgba(170, 85, 17, .05);
+    text-decoration: underline;
+  }
+
+  .bookmark_title
+  {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+
+  .private
+  {
+    background: lightyellow;
+    border-width: 0 4px 1px 1px;
+    border-right-color: rgb(232, 215, 35);
+    border-bottom-color: #eee;
+  }
+
+  a.unread::after,
+a.unread:visited::after
+  {
+    color: #b41;
+    padding-right: 18px;
+    content: " \2666";
+  }
+
+  #bottom_next_prev,
+#per_page_picker
+  {
+    margin-top: 1.3em;
+  }
+
+  .description
+  {
+    margin: 0.2em 1em 1em 0;
+    line-height: 1.32;
+    color: #247;
+  }
+
+  .description blockquote
+  {
+    padding: 0.2em 0.8em;
+    margin: 0;
+    border-left: 3px solid #247;
+  }
+
+  #bookmarks
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #bookmarks > *
+  {
+    width: 40%!important;
+    margin-right: 10%!important;
+  }
+
+  #bookmarks .bookmark
+  {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    padding: 5px;
+  }
+
+  #bookmarks .bookmark .edit_links
+  {
+    font-size: 90%;
+    opacity: 0.0;
+  }
+
+  #bookmarks .bookmark .when
+  {
+    font-size: 90%;
+    opacity: 0.4;
+  }
+
+  #bookmarks .bookmark:hover .when, #bookmarks .bookmark:hover .edit_links
+  {
+    opacity: 1.0;
+  }
+    
+  #bookmarks .bookmark .tag
+  {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    line-height: 1;
+    font-size: 10px;
+    color: #ccc;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #626262;
+    border-radius: 10px;
+  }
+    
+  .when
+    {
+    color: #ccc;
+    }
+    
+  #bookmarks .bookmark:hover
+  {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  #bookmarks .bookmark .description
+  {
+    max-height: 100px;
+    overflow: hidden;
+    font-size: 80%;
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+
+  #bookmarks .bookmark:hover .description
+  {
+    max-height: 800px;
+    transition: max-height 1s ease-in-out;
+    overflow-y: scroll;
+  }    
+}

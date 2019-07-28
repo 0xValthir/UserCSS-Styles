@@ -1,12 +1,12 @@
 /* ==UserStyle==
-@name           Kotaku - Dark Mode + Minimal Article View
+@name           Kinja - Dark Mode + Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
 @version        1.0.0
 @description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
 @author         Hunter Morrell
 ==/UserStyle== */
 
-@-moz-document domain("kotaku.com") {
+@-moz-document domain("kotaku.com"), domain("gizmodo.com"), domain("theinventory.com") {
 
 	html body div.navwrap--outer,
 	html body div section.sidebar,
