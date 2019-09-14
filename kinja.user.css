@@ -2,7 +2,7 @@
 @name           Kinja - Dark Mode + Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
 @version        1.0.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site).
 @author         Hunter Morrell
 ==/UserStyle== */
 
@@ -14,17 +14,23 @@
 	.sharingfooter,
 	.reading-list-compact,
 	.js_site-footer,
-	html body div.page.js_page section.main div.main__content.js_main__content section.branch-wrapper div.post-wrapper.js_post-wrapper article div.post__misc div.js_related-module.related-module
+	html body div.page.js_page section.main div.main__content.js_main__content section.branch-wrapper div.post-wrapper.js_post-wrapper article div.post__misc div.js_related-module.related-module,
+  .js_header,
+  aside
 	{
 	    display: none!important;
 	}
 
-	html body div section.main div.main__content.js_main__content
+	html body div section.main div.main__content.js_main__content,
+  main,
+  main div
 	{
 	    width: 100%!important;
 	}
 
-	html body div.page.js_page
+	html body div.page.js_page,
+  main,
+  main div
 	{
 	    margin: 0!important;
 	    max-width: 100%!important;
@@ -204,7 +210,7 @@
 	    border-color: #aaa !important;
 	  }
 
-	  .global-nav--permalink .topnav__logostrip .section-nav:before, 
+	  .global-nav--permalink .topnav__logostrip .section-nav:before,
 	.global-nav--scrollback .topnav__logostrip .section-nav:before,
 	.postlist__item:after
 	  {
