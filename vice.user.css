@@ -14,6 +14,7 @@
 	.gutter,
 	.newsletter,
     .short-form-v2 .short-form-v2__bounding-box .short-form-article__right-bar
+    .short-form-right-rail
 	{
 	    display: none!important;
 	}
@@ -43,6 +44,11 @@
 	    max-width: 90%!important;
 	    padding-top: 0%!important;
 	}
+
+  .col-8--lg
+  {
+    width: 100%!important;
+  }
 
     .long-form-article__content__header
     {
