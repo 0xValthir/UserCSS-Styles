@@ -69,6 +69,11 @@
 	    color: rgb(187, 187, 187);
 	}
 
+  ⎋.article__body .article__pull-quote
+    {
+	    color: rgb(236, 236, 236);
+    }
+
 	.short-form-article__header
 	{
 	    border-top: none!important;
