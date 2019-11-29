@@ -1,24 +1,8 @@
 /* ==UserStyle==
 @name           Vice - Dark Mode + Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.1.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
-@author         Hunter Morrell
-==/UserStyle== */
-
-/* ==UserStyle==
-@name           Vice - Dark Mode + Minimal Article View
-@namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.0.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
-@author         Hunter Morrell
-==/UserStyle== */
-
-/* ==UserStyle==
-@name           Vice - Dark Mode + Minimal Article View
-@namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.0.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@version        1.1.1
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site).
 @author         Hunter Morrell
 ==/UserStyle== */
 
@@ -64,10 +48,11 @@
     {
         margin-left: 0%!important;
     }
-    
+
 	main,
     .long-form-v2 .long-form-v2__content .long-form-v2__header-wrapper,
-    body
+    body,
+    .heading
 	{
 	    padding-top: 0!important;
 	    background-color: rgb(49, 49, 49)!important;
@@ -88,7 +73,7 @@
 	{
 	    border-top: none!important;
 	}
-    
+
     .long-form-v2 .long-form-v2__content .long-form-v2__header-wrapper
     {
         margin-left: 0!important;
