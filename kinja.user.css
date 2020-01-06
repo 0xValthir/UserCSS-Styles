@@ -6,7 +6,7 @@
 @author         Hunter Morrell
 ==/UserStyle== */
 
-@-moz-document domain("kotaku.com"), domain("gizmodo.com"), domain("theinventory.com") {
+@-moz-document domain("kotaku.com"), domain("gizmodo.com"), domain("theinventory.com"), domain("lifehacker.com"), domain("skillet.lifehacker.com"), domain("jalopnik.com") {
 
 	html body div.navwrap--outer,
 	html body div section.sidebar,
