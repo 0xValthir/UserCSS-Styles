@@ -1,16 +1,8 @@
 /* ==UserStyle==
 @name           Eurogamer - Dark Mode + Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.1.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
-@author         Hunter Morrell
-==/UserStyle== */
-
-/* ==UserStyle==
-@name           Eurogamer - Dark Mode + Minimal Article View
-@namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.0.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@version        1.2.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site).
 @author         Hunter Morrell
 ==/UserStyle== */
 
@@ -55,7 +47,7 @@
         margin-left: 5%!important;
     }
 
-    p,
+  p,
     .main article.article main section figure.video,
     .main div.container-690,
     .below.hd div#comments.hd,
@@ -84,4 +76,9 @@
     {
         margin-right: 2%!important;
     }
+
+  .article .body strong
+  {
+    color: #bfbfbf!important;
+  }
 }
