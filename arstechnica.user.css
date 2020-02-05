@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           ArsTechnica - Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.1.1
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@version        1.2.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site).
 @author         Hunter Morrell
 ==/UserStyle== */
 
@@ -15,6 +15,16 @@
         padding-left: 5%!important;
         padding-right: 5%!important;
         padding-top: 0!important;
+    }
+
+    article
+    {
+      max-width: 100%!important;
+    }
+
+    .article-guts
+    {
+      padding: 0!important;
     }
 
     /* Primary article contents */
