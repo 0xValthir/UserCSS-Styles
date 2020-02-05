@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name           Polygon - Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0.0
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site).
+@author         Hunter Morrell
+==/UserStyle== */
+
+@-moz-document domain("polygon.com") {
+    .l-header,
+    .main-social,
+    .l-col__sidebar,
+    .c-footer,
+    .c-tab-bar,
+    .c-entry-group-labels,
+    .c-comments__message,
+    .c-package-subnav,
+    .connatix-container,
+    .outbrain-container,
+    .c-call-to-action-button
+    {
+        display: none!important;
+    }
+
+    #content
+    {
+        margin-top: 0!important;
+    }
+
+    .l-main-content,
+    body
+    {
+        background-color: #222222!important;
+    }
+
+    .c-page-title
+    {
+        color: #dd3232!important;
+    }
+
+    .l-col__main
+    {
+        color: #b4b2b2!important;
+    }
+}
