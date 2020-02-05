@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name           Tor - Dark Mode + Minimal Article View
+@namespace      github.com/HunterMorrell/UserCSS-Styles
+@version        1.0.0
+@description    Alters the layout the decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis instead of navigated the site).
+@author         Hunter Morrell
+==/UserStyle== */
+
+@-moz-document domain("tor.com") {
+    hgroup,
+    div.page-sidebar,
+    .related-posts,
+    .entry-tags,
+    .entry-footer,
+    .post-end-spacer,
+    .footer-favorite-wrapper,
+    div.sharedaddy,
+    footer,
+    #comment-form,
+    #comment-subscribe-wrapper,
+    #comment-more-buttons
+    {
+        display: none!important
+    }
+
+    #primary
+    {
+        margin-left: 5%!important;
+        margin-right: 5%!important;
+        margin-top: 1%!important;
+    }
+
+    #content
+    {
+        width: 100%!important;
+        padding-right: 0!important;
+    }
+
+    #page-wrapper,
+    html
+    {
+        background-color: #353434!important;
+        max-width: 100%!important;
+    }
+
+    a
+    {
+        color: #d84035!important;
+    }
+
+    p
+    {
+        color: #bfbfbf!important;
+    }
+}
