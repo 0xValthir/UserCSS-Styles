@@ -16,6 +16,10 @@
 	.js_site-footer,
 	html body div.page.js_page section.main div.main__content.js_main__content section.branch-wrapper div.post-wrapper.js_post-wrapper article div.post__misc div.js_related-module.related-module,
   .js_header,
+  .js_topbar,
+  .js_share-tools,
+  .js_subscribe,
+  .js_footer-container,
   aside
 	{
 	    display: none!important;
