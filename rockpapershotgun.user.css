@@ -70,7 +70,8 @@
 	}
 
 	/* Regular text colors */
-	p
+	p,
+  li
 	{
 	    color: #aa9f9f!important;
 	}
