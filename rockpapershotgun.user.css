@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name           RockPaperShotgun - Dark Mode + Minimal Article View
 @namespace      github.com/HunterMorrell/UserCSS-Styles
-@version        1.0.0
-@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site). 
+@version        1.0.1
+@description    Alters the layout to decrease wasted space and remove unneeded elements (if you're viewing things on a per article basis isntead of navigating the site).
 @author         Hunter Morrell
 ==/UserStyle== */
 
@@ -63,7 +63,8 @@
 
 	/* Header colors */
 	h1,
-	h2
+	h2,
+  h3
 	{
 	    color: #E7387D!important;
 	}
